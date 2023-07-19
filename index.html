@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate a random password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <div class="display">
+            <div class="text">
+                <h1>Generate a <br><span>random password</span></h1>
+                <p>Never use an insecure password again.</p>
+            </div>
+            <button id="Generate-El" onclick="generatePassword()">Generate passwords</button>
+            </div>
+            <div class="setting">
+                <div class="box">
+                    <p>Include  symbols</p>
+                    <button id="symbols-btn" onclick="flipSymbolsBtn()">ON</button>
+                </div>
+                <div class="box">
+                    <p>Include numbers</p>
+                    <button id="numbers-btn" onclick="flipNumbersBtn()">ON</button>
+                </div>
+                <div class="box">
+                    <span onclick="removeFromLength()">-</span>
+                    <div class="screen" id="length-El">15</div>
+                    <span onclick="addToLength()">+</span>
+                </div>
+            </div> 
+        </div>
+        <div class="output">
+            <div class="result" id="result-one"></div>
+            <div class="result" id="result-tow"></div>
+        </div>
+    </div>
+</body>
+</html>
