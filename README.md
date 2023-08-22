@@ -1,2 +1,2 @@
 # password_generator
- password generator using js
+ password generator using JavaScript 
